@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Проверка совершеннолетие</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="files/cancel.png" type="image/x-icon">
+  </head>
+  <body>
+
+
+
+  <div class="box">
+    <form action="#" >
+      <h1>Проверка на совершеннолетие</h1>
+      <img src="files/cancel.png" width="100" height="100" alt="Фотография">
+
+      <input type="text" id="age" name="" placeholder="Введите ваш возрост" >
+      <input type="submit" id = "check" value="Проверить">
+      <h3 id='boldStuff'></h3>
+  </form>
+</div>
+
+
+  <script>
+
+let btn = document.querySelector("#check");
+btn.addEventListener("click", out);
+
+var tries = 0 
+
+async function out() {
+  var age =  document.querySelector("#age").value;
+  if (age >= 18 && age < 102){
+    if (tries == 0){
+        document.getElementById('boldStuff').innerHTML = "Вы вошли с первого раза";
+        window.open("leapYear.html","_blank")
+    }else{
+        document.getElementById('boldStuff').innerHTML = `для входа вам понадобилось ${tries} попыток`;
+        window.open("leapYear.html","_blank")
+    }
+  }else{
+    document.getElementById('boldStuff').innerHTML = "Ваш возраст некорректен";
+    tries++ 
+  }  
+}
+
+
+
+
+
+ 
+
+
+
+</script>
+
+  </body>
+</html>

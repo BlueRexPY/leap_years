@@ -1,0 +1,139 @@
+
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+/*фон*/
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/*бланк*/
+
+
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  background-image: linear-gradient(rgba(33,33,33,13.7), rgba(0,0,0,0.5));
+  border-radius: 5px;
+  font: small-caps bold 24px/1 sans-serif;
+
+}
+.box h1{
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  font: small-caps bold 24px/1 sans-serif;
+}
+
+.box h3{
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  font: small-caps bold 17px/1 sans-serif;
+  word-wrap: break-word;
+}
+
+.box input[type = "text"],.box input[type = "text"]{
+  text-align: center;
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #03BF9E;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #ffffff;
+  border-radius: 24px;
+  transition: 0.25s;
+  
+}
+.box input[type = "text"]:focus,.box input[type = "text"]:focus{
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #D92958;
+  
+}
+.box input[type = "submit"]{
+  text-align: center;
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #D92958;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  font: small-caps bold 20px/1 sans-serif;
+}
+.box input[type = "submit"]:hover{
+  background: #D92958;
+  text-align: center;
+  font: small-caps bold 20px/1 sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
