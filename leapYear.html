@@ -6,9 +6,6 @@
     <link rel="shortcut icon" href="files/clock.png" type="image/x-icon">
   </head>
   <body>
-
-
-
   <div class="box">
     <form action="#" >
       <h1>Проверка на високосные года</h1>
@@ -20,23 +17,7 @@
       <h3 id='boldStuff'></h3>
   </form>
 </div>
-
-
   <script>
-//  var end_ages = []
-//  var ages = [1844]
-//
-//  for (let i = 1848; i < 2148; i+=4){
-//    ages.push(i);
-//  }
-//  min = prompt(`Введите минимальный год`)
-//  max = prompt(`Введите максимальный год`)
-//  for (let x = 0; x < ages.length; x++){
-//    if(ages[x] >= min && ages[x] <= max){
-//      end_ages.push(ages[x]);
-//    }
-//  }
-//  alert( end_ages );
 let btn = document.querySelector("#check");
 btn.addEventListener("click", out);
 
@@ -51,8 +32,6 @@ async function out() {
   }
   document.getElementById('boldStuff').innerHTML = ages;
 }
-
 </script>
-
   </body>
 </html>
